@@ -53,7 +53,7 @@ def load_dataset(store_id):
 
 def predict(data):
     try:
-        url = 'https://rossmann-model-test-bec0a222deb0.herokuapp.com/rossmann/predict'
+        url = 'https://rossmannproject-production.up.railway.app/rossmann/predict'  # ← URL atualizada
         header = {'Content-type': 'application/json'}
 
         r = requests.post(url, data=data, headers=header)
