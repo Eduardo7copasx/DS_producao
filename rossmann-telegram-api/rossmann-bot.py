@@ -28,8 +28,8 @@ def send_message(chat_id, text):
 
 def load_dataset(store_id):
     try:
-        df10 = pd.read_csv('/home/ds-eduardo/DS_producao/Dados/test.csv')
-        df_store_raw = pd.read_csv('/home/ds-eduardo/DS_producao/Dados/store.csv')
+        df10 = pd.read_csv('test.csv')
+        df_store_raw = pd.read_csv('store.csv')
 
         df_test = pd.merge(df10, df_store_raw, how='left', on='Store')
         df_test = df_test[df_test['Store'] == store_id]
