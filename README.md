@@ -4,7 +4,7 @@
 
 Qualquer pessoa conectada à um dispositivo com internet pode acessar a previsão de faturamento de seis semanas de qualquer loja Rossmann, em tempo real, através de um bot no Telegram.
 
-![Bot no Telegram](img/bot_telegram.jpeg)
+![Bot no Telegram](Img/bot_telegram.png)
 
 ## Contexto de Negócio
 
@@ -18,7 +18,7 @@ O objetivo principal é fornecer ao CFO previsões de vendas confiáveis para ca
 
 Aplicação do ciclo CRISP (Cross-Industry Process) focado em Ciência de Dados como uma técnica de metodologia ágil para entrega de um projeto end-to-end de maneira rápida, analisando os dados disponíveis para mapear todos os possíveis problemas de negócio nas diferentes etapas do projeto e entregar valor rápido para os stakeholders.
 
-![Ciclo CRISP](img/CRISP.jpg)
+![Ciclo CRISP](Img/CRISP.jpg)
 
 ## Tecnologias Utilizadas
 
@@ -45,25 +45,25 @@ Aplicação do ciclo CRISP (Cross-Industry Process) focado em Ciência de Dados 
 
 Na análise entre as variáveis Vendas x Distância entre competidores, apesar da baixa correlação, farmácias Rossmann localizadas próximas umas das outras fazem com que as vendas aumentem de maneira geral.
 
-![Competidores próximos aumentam as vendas](img/stores_with_closer_competitors_sell_more.png)
+![Competidores próximos aumentam as vendas](Img/stores_with_closer_competitors_sell_more.png)
 
 ### As lojas vendem menos aos finais de semana
 
 Com alta correlação, aos finais de semana, especialmente aos domingos, há uma queda considerável nas vendas de produtos das lojas.
 
-![Lojas vendem menos aos finais de semana](img/stores_sell_less_on_weekends.png)
+![Lojas vendem menos aos finais de semana](Img/stores_sell_less_on_weekends.png)
 
 ### As lojas vendem menos no segundo semestre do ano
 
 De agosto a dezembro há uma queda em torno de 30% nas vendas em relação ao restante do ano.
 
-![Lojas vendem menos no segundo semestre](img/sales_by_month.png)
+![Lojas vendem menos no segundo semestre](Img/sales_by_month.png)
 
-## 🤖 Machine Learning
+## Machine Learning
 
 Foi utilizada a metodologia do cross-validation para achar a performance real do modelo, mitigando possíveis vieses temporais.
 
-![Cross validation](img/cross_validation.jpg)
+![Cross validation](Img/mls.jpg)
 
 ### Avaliação dos Modelos
 
@@ -75,7 +75,7 @@ Foram testados cinco modelos de machine learning, testando a linearidade dos dad
 - Random Forest Regresor
 - XGBoost Regressor
 
-
+![modelos](Img/models.png)
 
 ### Modelo Final
 
@@ -83,14 +83,14 @@ Após a otimização dos parâmetros, através do Random Search, foi adotado o m
 
 Assim, o resultado final do modelo adotado foi:
 
-
+![final_modelo](Img/final.png)
 
 ## Performance de Negócio
 
 Avaliando a soma das vendas de todas as lojas, temos uma variação de +- 0,3%. 
 Para cada loja, o erro médio é de aproximadamente 10%.
 
-
+![predictions](Img/predictions.png)
 
 
 ## Conclusão
